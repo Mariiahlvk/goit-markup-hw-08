@@ -1,0 +1,55 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity $transition-animation;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  min-width: 528px;
+
+  background-color: $white-color;
+  box-shadow: $modal-shadow;
+  border-radius: 4px;
+
+  transition: transform $transition-animation;
+}
+
+.modal__button-closed {
+  position: absolute;
+  display: inline-flex;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+
+  cursor: pointer;
+  background-color: $white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal__button-icon {
+  transition: fill $transition-animation;
+}
+
+.modal__button-closed:hover .modal__button-icon,
+.modal__button-closed:focus .modal__button-icon {
+  fill: $accent-color;
+}

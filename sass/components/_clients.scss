@@ -1,0 +1,42 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__title {
+  @extend %_title;
+}
+
+.clients__list {
+  display: flex;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border $transition-animation;
+
+  &:hover {
+    border: 1px solid $accent-color;
+  }
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__logo {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: fill $transition-animation;
+}
+
+.clients__link:hover .clients__logo {
+  fill: $accent-color;
+}
