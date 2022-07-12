@@ -4,8 +4,12 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__group {
@@ -101,10 +105,15 @@
 }
 
 .form__label-check {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
 
   color: $text-color;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__icon-check {
