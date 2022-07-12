@@ -49,10 +49,9 @@
 }
 
 .portfolio__list {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
 }
 
 .portfolio__item {
@@ -63,10 +62,16 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - 60px) / 3);
   }
-  
+
   &:hover {
     box-shadow: $prtf-card-shadow;
   }
+}
+
+.portfolio__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .portfolio__img {
@@ -99,6 +104,7 @@
 }
 
 .portfolio__content {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid $portfolio-border-color;
   border-left: 1px solid $portfolio-border-color;

@@ -48,7 +48,7 @@
           <div class="header__contact-nav">
             <ul class="contact-nav__list">
               <li class="contact-nav__item">
-                <a href="mailto:info@devstudio.com" class="contact-nav__link--mailmob">
+                <a href="mailto:info@devstudio.com" class="contact-nav__link mailmob">
                   <svg class="contact-nav__icon" width="16" height="12">
                     <use href="./images/icons.svg#icon-envelope"></use>
                   </svg>
@@ -56,7 +56,7 @@
                 >
               </li>
               <li class="contact-nav__item">
-                <a href="tel:+380961111111" class="contact-nav__link--telmob">
+                <a href="tel:+380961111111" class="contact-nav__link telmob">
                   <svg class="contact-nav__icon" width="10" height="16">
                     <use href="./images/icons.svg#icon-smartphone"></use>
                   </svg>
@@ -98,42 +98,70 @@
           </ul>
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <div class="portfolio__img">
-                <img
-                  src="./images/web.jpg"
-                  alt="Ноутбук с изображением членов команды"
-                  width="370"
-                  height="294"
-                />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+              <a class="portfolio__link" href="">
+                <div class="portfolio__img">
+                  <picture>
+                    <source
+                      srcset="./images/card1-desk-min.jpg 1x, ./images/card1-desk-2x-min.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/card1-tabl-min.jpg 1x, ./images/card1-tabl-2x-min.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/card1-min.jpg 1x, ./images/card1-2x-min.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/card1-min.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
               <div class="portfolio__content">
                 <h2 class="portfolio__title">Технокряк</h2>
                 <p class="portfolio__direction">Веб-сайт</p>
               </div>
             </li>
             <li class="portfolio__item">
-              <div class="portfolio__img">
-                <img
-                  src="./images/poster.jpg"
-                  alt="Два баскетболиста борются"
-                  width="370"
-                  height="294"
-                />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+              <a class="portfolio__link" href="">
+                <div class="portfolio__img">
+                  <picture>
+                    <source
+                      srcset="./images/card2-desk-min.jpg 1x, ./images/card2-desk-2x-min.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/card2-tabl-min.jpg 1x, ./images/card2-tabl-2x-min.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/card2-min.jpg 1x, ./images/card2-2x-min.jpg 2x"
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/card2-min.jpg" alt="Два баскетболиста" />
+                  </picture>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
               <div class="portfolio__content">
                 <h2 class="portfolio__title">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
@@ -143,12 +171,24 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__img">
-                <img
-                  src="./images/restaurant.jpg"
-                  alt="Название ресторана на фоне кита"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/card3-desk-min.jpg 1x, ./images/card3-desk-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/card3-tabl-min.jpg 1x, ./images/card3-tabl-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/card3-min.jpg 1x, ./images/card3-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/card3-min.jpg" alt="Название ресторана" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -164,7 +204,24 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__img">
-                <img src="./images/prime.jpg" alt="Наушники" width="370" height="294" />
+                <picture>
+                  <source
+                    srcset="./images/card4-desk-min.jpg 1x, ./images/card4-desk-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/card4-tabl-min.jpg 1x, ./images/card4-tabl-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/card4-min.jpg 1x, ./images/card4-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/card4-min.jpg" alt="Наушники" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -180,12 +237,24 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__img">
-                <img
-                  src="./images/boxes.jpg"
-                  alt="Две маленькие коробки"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/card5-desk-min.jpg 1x, ./images/card5-desk-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/card5-tabl-min.jpg 1x, ./images/card5-tabl-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/card5-min.jpg 1x, ./images/card5-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/card5-min.jpg" alt="Две коробки" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -201,12 +270,24 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__img">
-                <img
-                  src="./images/inspiration.jpg"
-                  alt="Монитор компьютера с изображением веб-сайта"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/card6-desk-min.jpg 1x, ./images/card6-desk-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/card6-tabl-min.jpg 1x, ./images/card6-tabl-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/card6-min.jpg 1x, ./images/card6-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/card6-min.jpg" alt="Монитор компьютера" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -222,7 +303,24 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__img">
-                <img src="./images/edition.jpg" alt="Журнал" width="370" height="294" />
+                <picture>
+                  <source
+                    srcset="./images/card7-desk-min.jpg 1x, ./images/card7-desk-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/card7-tabl-min.jpg 1x, ./images/card7-tabl-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/card7-min.jpg 1x, ./images/card7-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/card7-min.jpg" alt="Журнал" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -238,12 +336,24 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__img">
-                <img
-                  src="./images/lab.jpg"
-                  alt="Ярлык с названием проекта"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/card8-desk-min.jpg 1x, ./images/card8-desk-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/card8-tabl-min.jpg 1x, ./images/card8-tabl-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/card8-min.jpg 1x, ./images/card8-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/card8-min.jpg" alt="Бирка с названием проекта" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -259,12 +369,27 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__img">
-                <img
-                  src="./images/gb.jpg"
-                  alt="Ноутбук с названием приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/card9-desk-min.jpg 1x, ./images/card9-desk-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/card9-tabl-min.jpg 1x, ./images/card9-tabl-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/card9-min.jpg 1x, ./images/card9-2x-min.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/card9-min.jpg"
+                    alt="Ноутбук с изображением названия компании"
+                  />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и

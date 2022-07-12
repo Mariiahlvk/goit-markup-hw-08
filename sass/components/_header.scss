@@ -69,7 +69,6 @@
 
   &.is-open .icon-close {
     display: block;
-    
   }
 
   &.is-open .icon-menu {
@@ -162,6 +161,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: column;
     margin-left: 84px;
+    margin-top: 21px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -169,12 +169,12 @@
   }
 }
 
-.contact-nav__item {
-  @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
+// .contact-nav__item {
+//   // @media screen and (min-width: 1200px) {
+//   //   padding-top: 32px;
+//   //   padding-bottom: 32px;
+//   // }
+// }
 
 .contact-nav__item {
   &:not(:last-child) {
@@ -184,6 +184,7 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
+      align-items: center;
     }
 
     @media screen and (min-width: 1200px) {
@@ -197,13 +198,16 @@
   align-items: center;
 
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
   letter-spacing: 0.02em;
 
   color: $text-color;
 
   transition: color $transition-animation;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
@@ -211,35 +215,23 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
   }
 
   &:hover,
   &:focus {
     color: $accent-color;
   }
+}
 
-  &--mailmob {
-    @media screen and (max-width: 767px) {
-      font-size: 24px;
-      line-height: 1.17;
-    }
-  }
-
-  &--telmob {
-    @media screen and (max-width: 767px) {
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.18;
-      letter-spacing: 0.02em;
-      color: $accent-color;
-    }
+.telmob {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
   }
 }
 
