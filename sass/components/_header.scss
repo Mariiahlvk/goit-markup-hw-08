@@ -161,12 +161,12 @@
   @media screen and (min-width: 768px) {
     flex-direction: column;
     margin-left: 84px;
-    margin-top: 21px;
+    padding-top: 21px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    margin-top: 11px;
+    padding-top: 32px;
   }
 }
 
