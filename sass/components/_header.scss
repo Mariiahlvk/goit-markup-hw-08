@@ -16,7 +16,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: $white-color;
   min-height: 60px;
 }
@@ -42,6 +41,8 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -52,6 +53,7 @@
 
   display: inline-flex;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   border: 0;
   cursor: pointer;
@@ -82,7 +84,7 @@
 
 .header__site-nav {
   @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -154,28 +156,23 @@
   }
 }
 
-.contact-nav__list {
-  display: flex;
-  flex-direction: column-reverse;
-
+.header__contact-nav {
   @media screen and (min-width: 768px) {
-    flex-direction: column;
-    margin-left: 84px;
-    padding-top: 21px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    padding-top: 32px;
+    margin-left: auto;
   }
 }
 
-// .contact-nav__item {
-//   // @media screen and (min-width: 1200px) {
-//   //   padding-top: 32px;
-//   //   padding-bottom: 32px;
-//   // }
-// }
+.contact-nav__list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .contact-nav__item {
   &:not(:last-child) {
@@ -223,11 +220,23 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    .envelope,
+    .smartphone {
+      fill: $accent-color;
+    }
   }
 }
 
 .telmob {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
@@ -240,6 +249,31 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (max-width: 1199px) {
+    &.envelope {
+      width: 14px;
+      height: 10px;
+    }
+
+    &.smartphone {
+      width: 10px;
+      height: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &.envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    &.smartphone {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
   margin-right: 10px;
   fill: $text-color;
   align-self: center;
@@ -252,26 +286,22 @@
 
 .social__list {
   display: flex;
-  padding-top: 32px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  gap: 10px;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.social__item {
-  &:not(last-child) {
-    margin-right: 10px;
-  }
+.social__item:not(:last-child)::after {
+  content: '';
+  width: 22px;
+  height: 0px;
+  margin-left: 10px;
 
-  &::after {
-    content: '';
-    width: 22px;
-    height: 0px;
-    margin-left: 10px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-  }
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .social__link {

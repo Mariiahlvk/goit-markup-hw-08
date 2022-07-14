@@ -42,6 +42,8 @@
 }
 
 .hero__title {
+  max-width: 360px;
+  margin: auto;
   color: $white-color;
   font-weight: 900;
   font-size: 26px;
@@ -49,11 +51,6 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: center;
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    max-width: 360px;
-    margin: auto;
-  }
 
   @media screen and (min-width: 1200px) {
     max-width: 696px;

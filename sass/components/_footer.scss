@@ -14,24 +14,15 @@
 }
 
 .footer__contact {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
 
-.footer__container-blocks {
+.footer__group {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
@@ -69,8 +60,10 @@
 }
 
 .footer__join {
-  margin-bottom: 60px;
   flex-direction: row;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .footer__join-title,
@@ -119,8 +112,15 @@
   fill: $white-color;
 }
 
+.footer__sub {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
+
 .footer__sub-label {
   display: inline-block;
+  width: 100%;
 }
 
 .footer__sub-input {
@@ -134,7 +134,8 @@
   border-radius: 4px;
 
   @media screen and (max-width: 1199px) {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 
